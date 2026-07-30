@@ -1,0 +1,1292 @@
+[
+  {
+    "id": "democracy_index",
+    "label": "The Economist Democracy Index",
+    "unit": "",
+    "category": "Governance",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/grapher/democracy-index-eiu",
+    "description": "Measures the state of democracy based on electoral process, civil liberties, functioning of government, political participation, and political culture. Published by the Economist Group.",
+    "scale": {
+      "label": "Scale: 0 - 10",
+      "gradientClass": "democracy",
+      "lowLabel": "0 - Authoritarian",
+      "highLabel": "10 - Full democracy"
+    }
+  },
+  {
+    "id": "corruption",
+    "label": "Control of Corruption Index",
+    "unit": "",
+    "category": "Governance",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/CC.EST",
+    "description": "Reflects perceptions of the extent to which public power is exercised for private gain, including petty and grand forms of corruption.",
+    "scale": {
+      "label": "Scale: -2.5 to 2.5",
+      "gradientClass": "corruption",
+      "lowLabel": "-2.5 - High corruption",
+      "highLabel": "2.5 - Strong control"
+    }
+  },
+  {
+    "id": "corruption_perceptions_index",
+    "label": "Corruption Perceptions Index (CPI)",
+    "unit": "",
+    "category": "Governance",
+    "source": "Transparency International",
+    "sourceUrl": "https://www.transparency.org/en/cpi",
+    "description": "The Corruption Perceptions Index ranks countries by their perceived levels of public sector corruption, as determined by expert assessments and opinion surveys.",
+    "scale": {
+      "label": "Scale: 0 - 100",
+      "gradientClass": "positive",
+      "lowLabel": "0 - Highly corrupt",
+      "highLabel": "100 - Very clean"
+    }
+  },
+  {
+    "id": "press_freedom",
+    "label": "Press Freedom Index",
+    "unit": "",
+    "category": "Governance",
+    "source": "Reporters Without Borders",
+    "sourceUrl": "https://rsf.org/en/index",
+    "description": "Evaluates the level of freedom available to journalists based on pluralism, media independence, environment, self-censorship, legislation, and infrastructure.",
+    "scale": {
+      "label": "Scale: 0 - 100",
+      "gradientClass": "press-freedom",
+      "lowLabel": "0 - Very serious situation",
+      "highLabel": "100 - Good situation"
+    }
+  },
+  {
+    "id": "rule_of_law",
+    "label": "Rule of Law Index",
+    "unit": "",
+    "category": "Governance",
+    "source": "V-Dem / Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/grapher/rule-of-law-index",
+    "description": "Measures adherence to rule of law principles including accountability, just laws, open government, and accessible and impartial dispute resolution.",
+    "scale": {
+      "label": "Scale: 0 - 1",
+      "gradientClass": "positive",
+      "lowLabel": "0 - Weak rule of law",
+      "highLabel": "1 - Strong rule of law"
+    }
+  },
+  {
+    "id": "human_rights_score",
+    "label": "Human Rights Protection Score",
+    "unit": "",
+    "category": "Governance",
+    "source": "V-Dem / Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/grapher/human-rights-scores",
+    "description": "Measures the degree to which human rights are protected, including civil liberties, physical integrity rights, and political rights.",
+    "scale": {
+      "label": "Scale: -4 to 6",
+      "gradientClass": "positive",
+      "lowLabel": "Lower - Weak protection",
+      "highLabel": "Higher - Strong protection"
+    }
+  },
+  {
+    "id": "gdp",
+    "label": "GDP",
+    "unit": "billion $",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+    "description": "Gross Domestic Product - the total monetary value of all goods and services produced within a country's borders in a specific time period.",
+    "scale": {
+      "label": "Unit: billion $",
+      "gradientClass": "neutral",
+      "lowLabel": "Lower = Smaller economy",
+      "highLabel": "Higher = Larger economy"
+    }
+  },
+  {
+    "id": "annual_gdp_growth",
+    "label": "Annual GDP Growth",
+    "unit": "%",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG",
+    "description": "Annual percentage growth rate of GDP at market prices based on constant local currency. Shows how fast the economy is expanding or contracting.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "growth",
+      "lowLabel": "Negative = Recession",
+      "highLabel": "Positive = Growth"
+    }
+  },
+  {
+    "id": "gdp_per_capita",
+    "label": "GDP per Capita",
+    "unit": "$",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
+    "description": "GDP divided by midyear population. Provides a per-person measure of economic output, useful for comparing living standards between countries.",
+    "scale": {
+      "label": "Unit: $",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less prosperous",
+      "highLabel": "Higher = More prosperous"
+    }
+  },
+  {
+    "id": "gdp_ppp",
+    "label": "GDP per Capita (PPP)",
+    "unit": "$",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD",
+    "description": "GDP per capita adjusted for Purchasing Power Parity. Accounts for price differences between countries, providing a more accurate comparison of living standards.",
+    "scale": {
+      "label": "Unit: $",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less purchasing power",
+      "highLabel": "Higher = More purchasing power"
+    }
+  },
+  {
+    "id": "debt_to_gdp",
+    "label": "Debt to GDP Ratio",
+    "unit": "%",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/GC.DOD.TOTL.GD.ZS",
+    "description": "The ratio of a country's public debt to its GDP. Indicates the country's ability to pay back its debt without incurring further debt.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Healthier finances",
+      "highLabel": "Higher = More debt burden"
+    }
+  },
+  {
+    "id": "inflation",
+    "label": "Inflation",
+    "unit": "%",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG",
+    "description": "Annual percentage change in consumer price index. Measures how quickly prices for goods and services are rising and purchasing power is declining.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "inflation",
+      "lowLabel": "Low (~2%) = Stable prices",
+      "highLabel": "High = Rapid price increase"
+    }
+  },
+  {
+    "id": "unemployment",
+    "label": "Unemployment Rate",
+    "unit": "%",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS",
+    "description": "Share of the labor force that is without work but available and seeking employment. A key indicator of labor market health.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Healthier job market",
+      "highLabel": "Higher = More joblessness"
+    }
+  },
+  {
+    "id": "gini",
+    "label": "Gini Coefficient",
+    "unit": "",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SI.POV.GINI",
+    "description": "Measures income inequality within a country. Shows how evenly wealth is distributed among the population.",
+    "scale": {
+      "label": "Scale: 0 - 100",
+      "gradientClass": "gini",
+      "lowLabel": "0 - Perfect equality",
+      "highLabel": "100 - Perfect inequality"
+    }
+  },
+  {
+    "id": "fdi_net_inflows",
+    "label": "Foreign Direct Investment (Net Inflows)",
+    "unit": "billion $",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD",
+    "description": "Net inflows of investment to acquire a lasting management interest in an enterprise operating in an economy other than that of the investor.",
+    "scale": {
+      "label": "Unit: billion $",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less foreign investment",
+      "highLabel": "Higher = More foreign investment"
+    }
+  },
+  {
+    "id": "trade_percent_gdp",
+    "label": "Trade (% of GDP)",
+    "unit": "%",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/NE.TRD.GNFS.ZS",
+    "description": "Sum of exports and imports of goods and services measured as a share of GDP. Indicates how open and integrated an economy is with the rest of the world.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "neutral",
+      "lowLabel": "Lower = Less open economy",
+      "highLabel": "Higher = More open economy"
+    }
+  },
+  {
+    "id": "exports_percent_gdp",
+    "label": "Exports (% of GDP)",
+    "unit": "%",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS",
+    "description": "Exports of goods and services as a share of GDP. Measures how much of a country's economic output is sold to other countries.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "neutral",
+      "lowLabel": "Lower = Less export-oriented",
+      "highLabel": "Higher = More export-oriented"
+    }
+  },
+  {
+    "id": "gross_savings_percent_gdp",
+    "label": "Gross Savings (% of GDP)",
+    "unit": "%",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/NY.GNS.ICTR.ZS",
+    "description": "Gross savings as percentage of GDP. Calculated as gross national income less total consumption, plus net transfers.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less savings",
+      "highLabel": "Higher = More savings"
+    }
+  },
+  {
+    "id": "current_account_balance_percent_gdp",
+    "label": "Current Account Balance (% of GDP)",
+    "unit": "%",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS",
+    "description": "Sum of net exports of goods and services, net primary income, and net secondary income. A positive value indicates a surplus.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "growth",
+      "lowLabel": "Negative = Deficit",
+      "highLabel": "Positive = Surplus"
+    }
+  },
+  {
+    "id": "internet_users_percent",
+    "label": "Internet Users (% of Population)",
+    "unit": "%",
+    "category": "Technology",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS",
+    "description": "Percentage of the population using the Internet. Includes users who accessed the Internet from any device in the last 3 months.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less connected",
+      "highLabel": "Higher = More connected"
+    }
+  },
+  {
+    "id": "share_using_internet",
+    "label": "Share Using Internet (OWID)",
+    "unit": "%",
+    "category": "Technology",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/internet",
+    "description": "Share of individuals using the Internet, sourced from Our World in Data. Measures digital connectivity and access to information.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less access",
+      "highLabel": "Higher = More access"
+    }
+  },
+  {
+    "id": "mobile_subscriptions_per100",
+    "label": "Mobile Subscriptions (per 100 people)",
+    "unit": "per 100",
+    "category": "Technology",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2",
+    "description": "Number of mobile cellular telephone subscriptions per 100 people. Can exceed 100 as individuals may have multiple subscriptions.",
+    "scale": {
+      "label": "Unit: per 100 people",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less mobile access",
+      "highLabel": "Higher = More mobile access"
+    }
+  },
+  {
+    "id": "fixed_broadband_per100",
+    "label": "Fixed Broadband Subscriptions (per 100 people)",
+    "unit": "per 100",
+    "category": "Technology",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.BBND.P2",
+    "description": "Fixed broadband subscriptions per 100 people. Refers to high-speed fixed Internet subscriptions at 256 kbit/s or faster.",
+    "scale": {
+      "label": "Unit: per 100 people",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less broadband",
+      "highLabel": "Higher = More broadband"
+    }
+  },
+  {
+    "id": "rd_expenditure_percent_gdp",
+    "label": "R&D Expenditure (% of GDP)",
+    "unit": "%",
+    "category": "Technology",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS",
+    "description": "Expenditures for research and development as a percentage of GDP. Includes basic research, applied research, and experimental development.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less R&D investment",
+      "highLabel": "Higher = More R&D investment"
+    }
+  },
+  {
+    "id": "patent_applications_residents",
+    "label": "Patent Applications (Residents)",
+    "unit": "",
+    "category": "Technology",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/IP.PAT.RESD",
+    "description": "Number of patent applications filed by residents of the country. An indicator of innovation capacity and technological development.",
+    "scale": {
+      "label": "Unit: applications",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less innovation",
+      "highLabel": "Higher = More innovation"
+    }
+  },
+  {
+    "id": "hightech_exports_percent",
+    "label": "High-Technology Exports (% of Manufactured)",
+    "unit": "%",
+    "category": "Technology",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/TX.VAL.TECH.MF.ZS",
+    "description": "High-technology exports as a percentage of manufactured exports. Includes products with high R&D intensity like aerospace, computers, and electronics.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less tech exports",
+      "highLabel": "Higher = More tech exports"
+    }
+  },
+  {
+    "id": "ict_goods_exports_percent",
+    "label": "ICT Goods Exports (% of Total)",
+    "unit": "%",
+    "category": "Technology",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/TX.VAL.ICTG.ZS.UN",
+    "description": "Information and communication technology goods exports as a percentage of total goods exports. Includes telecom, audio/video, computer equipment, and components.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less ICT exports",
+      "highLabel": "Higher = More ICT exports"
+    }
+  },
+  {
+    "id": "secure_internet_servers_per_million",
+    "label": "Secure Internet Servers (per million)",
+    "unit": "per million",
+    "category": "Technology",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.SECR.P6",
+    "description": "Number of secure Internet servers (using encryption technology) per million people. Indicates digital infrastructure maturity.",
+    "scale": {
+      "label": "Unit: per million people",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less digital infra",
+      "highLabel": "Higher = More digital infra"
+    }
+  },
+  {
+    "id": "education_expenditure_percent_gdp",
+    "label": "Education Expenditure (% of GDP)",
+    "unit": "%",
+    "category": "Education",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS",
+    "description": "Government expenditure on education as a percentage of GDP. Includes spending on schools, universities, and educational administration.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less education spending",
+      "highLabel": "Higher = More education spending"
+    }
+  },
+  {
+    "id": "literacy_rate_adult",
+    "label": "Literacy Rate (Adult)",
+    "unit": "%",
+    "category": "Education",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS",
+    "description": "Percentage of people ages 15 and above who can read and write a short, simple statement about their everyday life.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less literate",
+      "highLabel": "100% = Fully literate"
+    }
+  },
+  {
+    "id": "literacy_rate_youth",
+    "label": "Literacy Rate (Youth)",
+    "unit": "%",
+    "category": "Education",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SE.ADT.1524.LT.ZS",
+    "description": "Percentage of people ages 15-24 who can read and write. Indicates the effectiveness of recent education systems.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less youth literacy",
+      "highLabel": "100% = Full youth literacy"
+    }
+  },
+  {
+    "id": "school_enrollment_primary",
+    "label": "School Enrollment - Primary (% gross)",
+    "unit": "%",
+    "category": "Education",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SE.PRM.ENRR",
+    "description": "Gross enrollment ratio in primary education. Total enrollment regardless of age as a percentage of the officially eligible school-age population.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less enrollment",
+      "highLabel": "100%+ = Full enrollment"
+    }
+  },
+  {
+    "id": "school_enrollment_secondary",
+    "label": "School Enrollment - Secondary (% gross)",
+    "unit": "%",
+    "category": "Education",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SE.SEC.ENRR",
+    "description": "Gross enrollment ratio in secondary education. Indicates access to and participation in secondary schooling.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less enrollment",
+      "highLabel": "100%+ = Full enrollment"
+    }
+  },
+  {
+    "id": "school_enrollment_tertiary",
+    "label": "School Enrollment - Tertiary (% gross)",
+    "unit": "%",
+    "category": "Education",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SE.TER.ENRR",
+    "description": "Gross enrollment ratio in tertiary education (universities and colleges). Shows access to higher education.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less higher ed access",
+      "highLabel": "Higher = More higher ed access"
+    }
+  },
+  {
+    "id": "pupil_teacher_ratio_primary",
+    "label": "Pupil-Teacher Ratio (Primary)",
+    "unit": "",
+    "category": "Education",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SE.PRM.ENRL.TC.ZS",
+    "description": "Average number of pupils per teacher in primary school. Lower ratios generally indicate better quality of education.",
+    "scale": {
+      "label": "Unit: pupils per teacher",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Better attention",
+      "highLabel": "Higher = Overcrowded"
+    }
+  },
+  {
+    "id": "learning_adjusted_years_of_school",
+    "label": "Learning-Adjusted Years of School",
+    "unit": "years",
+    "category": "Education",
+    "source": "World Bank / Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/grapher/learning-adjusted-years-of-school-lays",
+    "description": "Number of years of schooling adjusted for actual learning. Combines quantity (years) and quality (test scores) of education.",
+    "scale": {
+      "label": "Unit: years",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less effective schooling",
+      "highLabel": "Higher = Better education outcomes"
+    }
+  },
+  {
+    "id": "life_expectancy",
+    "label": "Life Expectancy",
+    "unit": "years",
+    "category": "Healthcare",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN",
+    "description": "Average number of years a newborn would live if current mortality patterns were to remain constant. Key indicator of overall health and development.",
+    "scale": {
+      "label": "Unit: years",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Shorter lifespan",
+      "highLabel": "Higher = Longer lifespan"
+    }
+  },
+  {
+    "id": "hospital_beds_per1000",
+    "label": "Hospital Beds (per 1,000 people)",
+    "unit": "per 1,000",
+    "category": "Healthcare",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SH.MED.BEDS.ZS",
+    "description": "Number of hospital beds per 1,000 people. Includes inpatient beds available in public, private, general, and specialized hospitals.",
+    "scale": {
+      "label": "Unit: per 1,000 people",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less healthcare capacity",
+      "highLabel": "Higher = More healthcare capacity"
+    }
+  },
+  {
+    "id": "physicians_per1000",
+    "label": "Physicians (per 1,000 people)",
+    "unit": "per 1,000",
+    "category": "Healthcare",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS",
+    "description": "Number of medical doctors (generalist and specialist) per 1,000 people. Indicates the availability of medical care.",
+    "scale": {
+      "label": "Unit: per 1,000 people",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Fewer doctors",
+      "highLabel": "Higher = More doctors"
+    }
+  },
+  {
+    "id": "nurses_midwives_per1000",
+    "label": "Nurses & Midwives (per 1,000 people)",
+    "unit": "per 1,000",
+    "category": "Healthcare",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SH.MED.NUMW.P3",
+    "description": "Number of nursing and midwifery personnel per 1,000 people. Critical for primary healthcare and maternal/child health.",
+    "scale": {
+      "label": "Unit: per 1,000 people",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Fewer nurses",
+      "highLabel": "Higher = More nurses"
+    }
+  },
+  {
+    "id": "health_expenditure_percent_gdp",
+    "label": "Health Expenditure (% of GDP)",
+    "unit": "%",
+    "category": "Healthcare",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS",
+    "description": "Current health expenditure as a percentage of GDP. Includes both public and private spending on health services and goods.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "neutral",
+      "lowLabel": "Lower = Less health spending",
+      "highLabel": "Higher = More health spending"
+    }
+  },
+  {
+    "id": "health_expenditure_per_capita",
+    "label": "Health Expenditure per Capita",
+    "unit": "$",
+    "category": "Healthcare",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SH.XPD.CHEX.PC.CD",
+    "description": "Current health expenditure per capita in US dollars. Shows how much is spent on health per person.",
+    "scale": {
+      "label": "Unit: $",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less per-person spending",
+      "highLabel": "Higher = More per-person spending"
+    }
+  },
+  {
+    "id": "immunization_measles",
+    "label": "Immunization - Measles (%)",
+    "unit": "%",
+    "category": "Healthcare",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS",
+    "description": "Percentage of children ages 12-23 months who received measles vaccination. A key indicator of immunization program coverage.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less vaccination",
+      "highLabel": "100% = Full coverage"
+    }
+  },
+  {
+    "id": "immunization_dpt",
+    "label": "Immunization - DPT (%)",
+    "unit": "%",
+    "category": "Healthcare",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.IDPT",
+    "description": "Percentage of children ages 12-23 months who received DPT (diphtheria, pertussis, tetanus) vaccination.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less vaccination",
+      "highLabel": "100% = Full coverage"
+    }
+  },
+  {
+    "id": "mortality_rate_under5",
+    "label": "Under-5 Mortality Rate",
+    "unit": "per 1,000",
+    "category": "Healthcare",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT",
+    "description": "Probability that a newborn baby will die before reaching age 5, expressed per 1,000 live births.",
+    "scale": {
+      "label": "Unit: per 1,000 live births",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Better child health",
+      "highLabel": "Higher = More child deaths"
+    }
+  },
+  {
+    "id": "child_mortality",
+    "label": "Child Mortality Rate",
+    "unit": "%",
+    "category": "Healthcare",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/child-mortality",
+    "description": "Share of children who die before reaching age 5. Long-run historical estimates of child mortality.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Better child survival",
+      "highLabel": "Higher = More child deaths"
+    }
+  },
+  {
+    "id": "maternal_mortality_ratio",
+    "label": "Maternal Mortality Ratio",
+    "unit": "per 100,000",
+    "category": "Healthcare",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT",
+    "description": "Number of women who die from pregnancy-related causes per 100,000 live births. Reflects access to quality maternal healthcare.",
+    "scale": {
+      "label": "Unit: per 100,000 live births",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Safer childbirth",
+      "highLabel": "Higher = More maternal deaths"
+    }
+  },
+  {
+    "id": "birth_rate",
+    "label": "Birth Rate (per 1,000)",
+    "unit": "per 1,000",
+    "category": "Healthcare",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.CBRT.IN",
+    "description": "Crude birth rate - number of live births per 1,000 population in a given year.",
+    "scale": {
+      "label": "Unit: per 1,000 people",
+      "gradientClass": "neutral",
+      "lowLabel": "Lower = Fewer births",
+      "highLabel": "Higher = More births"
+    }
+  },
+  {
+    "id": "death_rate",
+    "label": "Death Rate (per 1,000)",
+    "unit": "per 1,000",
+    "category": "Healthcare",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.CDRT.IN",
+    "description": "Crude death rate - number of deaths per 1,000 population in a given year.",
+    "scale": {
+      "label": "Unit: per 1,000 people",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Fewer deaths",
+      "highLabel": "Higher = More deaths"
+    }
+  },
+  {
+    "id": "co2_emissions_per_capita",
+    "label": "CO\u00e2\u201a\u201a Emissions per Capita",
+    "unit": "tonnes",
+    "category": "Environment",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/co2-emissions",
+    "description": "Annual carbon dioxide emissions per person measured in tonnes. Includes emissions from fossil fuels, industry, and land use.",
+    "scale": {
+      "label": "Unit: tonnes per person",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Cleaner",
+      "highLabel": "Higher = More polluting"
+    }
+  },
+  {
+    "id": "co2_emissions_total",
+    "label": "CO\u00e2\u201a\u201a Emissions (Total)",
+    "unit": "million tonnes",
+    "category": "Environment",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/co2-emissions",
+    "description": "Total annual carbon dioxide emissions from fossil fuels, industry, and land use, measured in million tonnes.",
+    "scale": {
+      "label": "Unit: million tonnes",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Less emissions",
+      "highLabel": "Higher = More emissions"
+    }
+  },
+  {
+    "id": "greenhouse_gas_emissions_per_capita",
+    "label": "Greenhouse Gas Emissions per Capita",
+    "unit": "tonnes CO\u00e2\u201a\u201aeq",
+    "category": "Environment",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/greenhouse-gas-emissions",
+    "description": "Total greenhouse gas emissions per capita including CO\u00e2\u201a\u201a, methane, nitrous oxide, and F-gases measured in tonnes of CO\u00e2\u201a\u201a equivalents.",
+    "scale": {
+      "label": "Unit: tonnes CO\u00e2\u201a\u201aeq",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Less emissions",
+      "highLabel": "Higher = More emissions"
+    }
+  },
+  {
+    "id": "forest_area_percent",
+    "label": "Forest Area (% of Land)",
+    "unit": "%",
+    "category": "Environment",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/AG.LND.FRST.ZS",
+    "description": "Percentage of total land area covered by forest. Forests are land spanning over 0.5 hectares with trees taller than 5 meters.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less forest",
+      "highLabel": "Higher = More forest"
+    }
+  },
+  {
+    "id": "renewable_energy_percent",
+    "label": "Renewable Energy Consumption (%)",
+    "unit": "%",
+    "category": "Environment",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS",
+    "description": "Share of renewable energy in total final energy consumption. Includes hydropower, solar, wind, geothermal, and biomass.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = More fossil fuels",
+      "highLabel": "Higher = More renewables"
+    }
+  },
+  {
+    "id": "renewable_electricity_output",
+    "label": "Renewable Electricity Output (%)",
+    "unit": "%",
+    "category": "Environment",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.RNEW.ZS",
+    "description": "Percentage of total electricity output generated from renewable sources including hydro, solar, wind, and geothermal.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less renewable power",
+      "highLabel": "Higher = More renewable power"
+    }
+  },
+  {
+    "id": "renewable_energy_share_total",
+    "label": "Renewables (% Primary Energy)",
+    "unit": "%",
+    "category": "Environment",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/renewable-energy",
+    "description": "Share of primary energy that comes from renewable sources. Measures the overall transition away from fossil fuels.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = More fossil dependent",
+      "highLabel": "Higher = More renewable"
+    }
+  },
+  {
+    "id": "share_electricity_renewables",
+    "label": "Renewables (% Electricity)",
+    "unit": "%",
+    "category": "Environment",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/renewable-energy",
+    "description": "Share of electricity generated from renewable sources including hydro, wind, solar, biomass, wave, tidal, and geothermal.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less green electricity",
+      "highLabel": "Higher = More green electricity"
+    }
+  },
+  {
+    "id": "nuclear_energy_share",
+    "label": "Nuclear Energy (% Electricity)",
+    "unit": "%",
+    "category": "Environment",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/nuclear-energy",
+    "description": "Share of electricity generated from nuclear power. Nuclear provides carbon-free baseload power.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "neutral",
+      "lowLabel": "0% = No nuclear",
+      "highLabel": "Higher = More nuclear power"
+    }
+  },
+  {
+    "id": "access_to_electricity",
+    "label": "Access to Electricity (%)",
+    "unit": "%",
+    "category": "Environment",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS",
+    "description": "Percentage of population with access to electricity. Critical for development, health, education, and economic growth.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less electrified",
+      "highLabel": "100% = Full access"
+    }
+  },
+  {
+    "id": "pm25_air_pollution",
+    "label": "PM2.5 Air Pollution (\u00c2\u00b5g/m\u00c2\u00b3)",
+    "unit": "\u00c2\u00b5g/m\u00c2\u00b3",
+    "category": "Environment",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3",
+    "description": "Mean annual exposure to PM2.5 air pollution. Fine particulate matter of 2.5 micrometers or less that can penetrate deep into the lungs.",
+    "scale": {
+      "label": "Unit: \u00c2\u00b5g/m\u00c2\u00b3",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Cleaner air",
+      "highLabel": "Higher = More polluted"
+    }
+  },
+  {
+    "id": "arable_land_percent",
+    "label": "Arable Land (% of Land Area)",
+    "unit": "%",
+    "category": "Environment",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/AG.LND.ARBL.ZS",
+    "description": "Percentage of total land area that is arable - land under temporary crops, temporary meadows, land under market/kitchen gardens, and temporarily fallow land.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "neutral",
+      "lowLabel": "Lower = Less farmable land",
+      "highLabel": "Higher = More farmable land"
+    }
+  },
+  {
+    "id": "access_to_clean_fuels",
+    "label": "Access to Clean Fuels (%)",
+    "unit": "%",
+    "category": "Environment",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/EG.CFT.ACCS.ZS",
+    "description": "Percentage of population with primary reliance on clean fuels and technologies for cooking. Reduces indoor air pollution health risks.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = More biomass/coal use",
+      "highLabel": "100% = All clean fuels"
+    }
+  },
+  {
+    "id": "population",
+    "label": "Population",
+    "unit": "",
+    "category": "Demography",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+    "description": "Total number of people residing in a country. Based on de facto definition counting all residents regardless of legal status or citizenship.",
+    "scale": {
+      "label": "Unit: people",
+      "gradientClass": "neutral",
+      "lowLabel": "Lower = Smaller nation",
+      "highLabel": "Higher = Larger nation"
+    }
+  },
+  {
+    "id": "fertility",
+    "label": "Fertility Rate",
+    "unit": "",
+    "category": "Demography",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.TFRT.IN",
+    "description": "Total fertility rate - the average number of children a woman would have over her lifetime. Rate of 2.1 is considered replacement level.",
+    "scale": {
+      "label": "Unit: children per woman",
+      "gradientClass": "fertility",
+      "lowLabel": "<2.1 - Population decline",
+      "highLabel": ">2.1 - Population growth"
+    }
+  },
+  {
+    "id": "median_age",
+    "label": "Median Age",
+    "unit": "years",
+    "category": "Demography",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/grapher/median-age",
+    "description": "The age that divides the population into two numerically equal groups - half are younger, half are older. Indicates the overall age structure.",
+    "scale": {
+      "label": "Unit: years",
+      "gradientClass": "age",
+      "lowLabel": "Lower = Younger population",
+      "highLabel": "Higher = Aging population"
+    }
+  },
+  {
+    "id": "urbanization",
+    "label": "Urbanization Rate",
+    "unit": "%",
+    "category": "Demography",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS",
+    "description": "Percentage of total population living in urban areas. Reflects the degree of industrialization and development patterns of a country.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "neutral",
+      "lowLabel": "Lower = More rural",
+      "highLabel": "Higher = More urban"
+    }
+  },
+  {
+    "id": "hdi",
+    "label": "Human Development Index",
+    "unit": "",
+    "category": "Society",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/grapher/human-development-index",
+    "description": "The Human Development Index (HDI) is a summary measure of key dimensions of human development: a long and healthy life, a good education, and a decent standard of living.",
+    "scale": {
+      "label": "Scale: 0 - 1",
+      "gradientClass": "hdi",
+      "lowLabel": "0 - Low development",
+      "highLabel": "1 - Very high development"
+    }
+  },
+  {
+    "id": "life_satisfaction_index",
+    "label": "Self-reported Life Satisfaction",
+    "unit": "",
+    "category": "Society",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/grapher/happiness-cantril-ladder",
+    "description": "Based on the Cantril Self-Anchoring Scale where respondents rate their current life on a ladder from 0 (worst) to 10 (best possible life).",
+    "scale": {
+      "label": "Scale: 0 - 10",
+      "gradientClass": "positive",
+      "lowLabel": "0 - Worst possible life",
+      "highLabel": "10 - Best possible life"
+    }
+  },
+  {
+    "id": "poverty_ratio",
+    "label": "Poverty Ratio (Extreme Poverty %)",
+    "unit": "%",
+    "category": "Society",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/extreme-poverty",
+    "description": "Share of population living below the international poverty line. Measures the extent of extreme deprivation in a country.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Less poverty",
+      "highLabel": "Higher = More poverty"
+    }
+  },
+  {
+    "id": "homicide_rate",
+    "label": "Homicide Rate",
+    "unit": "per 100k people",
+    "category": "Safety",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/VC.IHR.PSRC.P5",
+    "description": "Intentional homicides per 100,000 people. Includes murder and manslaughter but excludes deaths from war. Indicates public safety and social stability.",
+    "scale": {
+      "label": "Unit: per 100,000 people",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Safer",
+      "highLabel": "Higher = More dangerous"
+    }
+  },
+  {
+    "id": "military_expenditure_percent_gdp",
+    "label": "Military Expenditure (% of GDP)",
+    "unit": "%",
+    "category": "Safety",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/MS.MIL.XPND.GD.ZS",
+    "description": "Military expenditure as a share of GDP. Includes spending on armed forces, defense ministry, paramilitary forces, and military space activities.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "neutral",
+      "lowLabel": "Lower = Less military spending",
+      "highLabel": "Higher = More military spending"
+    }
+  },
+  {
+    "id": "military_expenditure_total",
+    "label": "Military Expenditure (Total)",
+    "unit": "billion $",
+    "category": "Safety",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/MS.MIL.XPND.CD",
+    "description": "Total military expenditure in current US dollars. Includes all spending on current military forces and activities.",
+    "scale": {
+      "label": "Unit: billion $",
+      "gradientClass": "neutral",
+      "lowLabel": "Lower = Smaller military budget",
+      "highLabel": "Higher = Larger military budget"
+    }
+  },
+  {
+    "id": "terrorism_deaths",
+    "label": "Terrorism Deaths",
+    "unit": "",
+    "category": "Safety",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/terrorism",
+    "description": "Total number of people killed in terrorist attacks per year. Includes all recorded terrorist incidents.",
+    "scale": {
+      "label": "Unit: deaths per year",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Fewer terror deaths",
+      "highLabel": "Higher = More terror deaths"
+    }
+  },
+  {
+    "id": "gender_inequality",
+    "label": "Gender Inequality Index",
+    "unit": "",
+    "category": "Equality",
+    "source": "Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/grapher/gender-inequality-index-from-the-human-development-report",
+    "description": "The Gender Inequality Index reflects gender-based disadvantage in three dimensions \u00e2\u20ac\u201c reproductive health, empowerment and the labour market.",
+    "scale": {
+      "label": "Scale: 0 - 1",
+      "gradientClass": "negative",
+      "lowLabel": "0 - Equality",
+      "highLabel": "1 - High inequality"
+    }
+  },
+  {
+    "id": "female_labor_force_participation",
+    "label": "Female Labor Force Participation (%)",
+    "unit": "%",
+    "category": "Equality",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.FE.ZS",
+    "description": "Percentage of female population ages 15+ that is economically active. Indicates women's economic empowerment and gender equality.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less female participation",
+      "highLabel": "Higher = More female participation"
+    }
+  },
+  {
+    "id": "women_in_parliament",
+    "label": "Women in Parliament (%)",
+    "unit": "%",
+    "category": "Equality",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SG.GEN.PARL.ZS",
+    "description": "Percentage of parliamentary seats held by women. Reflects women's political representation and empowerment.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less representation",
+      "highLabel": "Higher = More representation"
+    }
+  },
+  {
+    "id": "female_enrollment_tertiary",
+    "label": "Female Enrollment - Tertiary (%)",
+    "unit": "%",
+    "category": "Equality",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SE.TER.ENRR.FE",
+    "description": "Gross enrollment ratio for females in tertiary education. Shows gender equity in access to higher education.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Less female higher ed",
+      "highLabel": "Higher = More female higher ed"
+    }
+  },
+  {
+    "id": "sanitation_access_safe",
+    "label": "Safe Sanitation Access (%)",
+    "unit": "%",
+    "category": "Infrastructure",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.SMSS.ZS",
+    "description": "Percentage of population using safely managed sanitation services. Includes flush toilets connected to sewers, septic tanks, or treatment plants.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Poor sanitation",
+      "highLabel": "100% = Full safe sanitation"
+    }
+  },
+  {
+    "id": "population_growth_rate",
+    "label": "Population Growth Rate",
+    "unit": "%",
+    "category": "Demography",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.GROW",
+    "description": "Annual population growth rate expressed as a percentage. Based on the de facto definition of population.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "neutral",
+      "lowLabel": "Negative = Population decline",
+      "highLabel": "Positive = Population growth"
+    }
+  },
+  {
+    "id": "logistics_performance_index",
+    "label": "Logistics Performance Index",
+    "unit": "",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/LP.LPI.OVRL.XQ",
+    "description": "Overall score reflecting perceptions of a country's logistics based on customs, infrastructure, international shipments, logistics competence, tracking, and timeliness.",
+    "scale": {
+      "label": "Scale: 1 - 5",
+      "gradientClass": "positive",
+      "lowLabel": "1 - Poor logistics",
+      "highLabel": "5 - Excellent logistics"
+    }
+  },
+  {
+    "id": "consumer_price_index",
+    "label": "Consumer Price Index (2010=100)",
+    "unit": "",
+    "category": "Economy",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL",
+    "description": "Consumer price index reflecting changes in the cost of acquiring a fixed basket of goods and services. Base year 2010 = 100.",
+    "scale": {
+      "label": "Index: 2010 = 100",
+      "gradientClass": "neutral",
+      "lowLabel": "Lower = Cheaper than 2010",
+      "highLabel": "Higher = More expensive than 2010"
+    }
+  },
+  {
+    "id": "human_capital_index",
+    "label": "Human Capital Index",
+    "unit": "",
+    "category": "Society",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/HD.HCI.OVRL",
+    "description": "Measures the amount of human capital that a child born today can expect to attain by age 18, given the risks of poor health and education in the country.",
+    "scale": {
+      "label": "Scale: 0 - 1",
+      "gradientClass": "positive",
+      "lowLabel": "0 - Low human capital",
+      "highLabel": "1 - High human capital"
+    }
+  },
+  {
+    "id": "pisa_reading_score",
+    "label": "PISA Reading Score",
+    "unit": "",
+    "category": "Education",
+    "source": "OECD / Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/grapher/pisa-test-score-mean-performance-on-the-reading-scale",
+    "description": "PISA mean performance on the reading scale. PISA assesses the extent to which 15-year-old students have acquired key knowledge and skills in reading, math, and science.",
+    "scale": {
+      "label": "Score",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Weaker reading skills",
+      "highLabel": "Higher = Stronger reading skills"
+    }
+  },
+  {
+    "id": "crime_rate",
+    "label": "Homicide Rate (UNODC)",
+    "unit": "per 100k",
+    "category": "Safety",
+    "source": "UNODC / Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/grapher/homicide-rate-unodc",
+    "description": "Intentional homicide rate per 100,000 population as reported by UNODC. Provides a standardized measure of violent crime across countries.",
+    "scale": {
+      "label": "Unit: per 100,000 people",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Safer",
+      "highLabel": "Higher = More dangerous"
+    }
+  },
+  {
+    "id": "water_stress_index",
+    "label": "Water Stress Level (%)",
+    "unit": "%",
+    "category": "Environment",
+    "source": "UN / Our World in Data",
+    "sourceUrl": "https://ourworldindata.org/water-use-stress",
+    "description": "Freshwater withdrawal as a proportion of available freshwater resources. Higher values indicate greater stress on water resources.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "negative",
+      "lowLabel": "Lower = Less water stress",
+      "highLabel": "Higher = Severe water stress"
+    }
+  },
+  {
+    "id": "water_access_safe",
+    "label": "Safe Drinking Water Access (%)",
+    "unit": "%",
+    "category": "Infrastructure",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/indicator/SH.H2O.SMDW.ZS",
+    "description": "Percentage of population using safely managed drinking water services. Water from an improved source located on premises, available when needed, and free from contamination.",
+    "scale": {
+      "label": "Unit: %",
+      "gradientClass": "positive",
+      "lowLabel": "Lower = Poor water access",
+      "highLabel": "100% = Full safe access"
+    }
+  }
+]
