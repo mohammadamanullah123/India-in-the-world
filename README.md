@@ -1,112 +1,120 @@
-<p align="center">
-  <img src="src/public/favicons/india_favicon.png" alt="India in the World" width="150">
-</p>
+<div align="center">
+  <img src="src/public/favicons/india_favicon.png" alt="India in the World Logo" width="150" />
+  
+  # 🌍 India in the World
 
-# India in the World
+  <p>
+    <strong>An Interactive Dashboard for Global Statistics & Insights</strong>
+  </p>
 
-An interactive dashboard for exploring and comparing global statistics across countries and years, with a special focus on visualizing India's position in the global context. Visualize relationships between economic, social, and governance indicators through scatterplots, timelines, maps, and data tables. 
+  ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+  ![D3.js](https://img.shields.io/badge/D3.js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white)
+  ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+  ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
+  ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
+</div>
 
-This project also features an AI-powered Insights Panel powered by **Google Gemini AI**, which provides instant analytical context for selected country data.
+<br />
 
-## Data Sources
+> **India in the World** is an interactive, visually stunning dashboard designed to explore and compare global statistics across countries and years, with a special focus on India's position in the global context. 
 
-All data is aggregated from authoritative international sources.
+## 📖 Short Description
 
-Read more on http://dataofthe.world/indicators
+Dive deep into the relationships between economic, social, and governance indicators through dynamic **scatterplots**, **timelines**, and **maps**. This project is supercharged with an **AI-powered Insights Panel** (via Google Gemini AI) that provides instant, analytical context for the data you explore, acting as your personal data analyst.
 
-### World Bank
-Fetched via REST API (`api.worldbank.org`):
-- GDP
-- Annual GDP Growth
-- GDP per Capita
-- GDP per Capita PPP 
-- Debt to GDP Ratio
-- Population
-- Inflation Rate
-- Unemployment Rate
-- Life Expectancy
-- Fertility Rate
-- Urbanization Rate
-- Gini Coefficient
-- Control of Corruption
-- Homicide Rate
+---
 
-### Our World in Data
-Downloaded as CSV files (`ourworldindata.org`):
-- Human Development Index
-- The Economist Democracy Index
-- Self-Reported Life Satisfaction
-- Median Age
-- Gender Inequality Index
+## ✨ Features
 
-### Reporters Without Borders
-Downloaded as CSV files `rsf.org`:
-- Press Freedom Index
+- 📊 **Interactive D3.js Visualizations**: Seamlessly compare data using dynamic Timelines, Choropleth Maps, and Scatterplots.
+- 🤖 **AI Insights Panel**: Get contextual, real-time insights on any country's stats powered by the Google Gemini API.
+- 🌍 **Extensive Datasets**: Deep metrics aggregated from the World Bank, Our World in Data, and Reporters Without Borders.
+- 🌓 **Dark/Light Mode**: A beautiful, responsive UI that automatically adapts to your system themes.
+- 🐳 **Dockerized Deployments**: Easy to host, build, and manage using Docker Compose.
 
-## Collecting Data
+---
 
-Data collection scripts are in `data_collection/`. You need Python with Jupyter and pandas.
+## 🛠️ Tech Stack
 
-1. **Run the notebooks** (in any order):
-   ```
-   data_collection/world_bank.ipynb
-   data_collection/our_world_in_data.ipynb
-   data_collection/reporters_without_borders.ipynb
-   ```
-   These fetch data and save JSON files to `data_collection/data/`.
+### Frontend
+- **HTML5 / CSS3 / Vanilla JS**: For a lightweight, lightning-fast UI.
+- **D3.js**: The industry standard for complex, data-driven documents and SVGs.
 
-2. **Build the database**:
-   ```bash
-   python data_collection/create_database.py
-   ```
-   This creates `dataoftheworld.db` SQLite database from the collected JSON files.
+### Backend & AI
+- **Node.js & Express.js**: Robust backend server to serve the API and frontend assets.
+- **SQLite3**: Lightweight, file-based database for blazingly fast querying.
+- **Google Gemini AI**: Next-generation LLM for generating on-the-fly analytical insights.
 
-## Setup & Running Locally
+### Data Collection
+- **Python & Pandas**: For scraping, cleaning, and processing raw JSON/CSV files into a structured SQLite database.
+- **Jupyter Notebooks**: Step-by-step interactive scripts for data extraction.
 
-Before running the application, make sure to set up your `.env` file in the `src` folder:
+---
+
+## 🚀 Installation Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/mohammadamanullah123/India-in-the-world.git
+cd India-in-the-world
+```
+
+### 2. Configure your Environment
+Create a `.env` file inside the `src/` directory and add your Google Gemini API key:
 ```bash
 # src/.env
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-### Option 1: Running with Docker Compose (Recommended)
+### 3. Choose your Setup Method
 
-1. Ensure your `.env` file is created in the `src` folder.
-2. Run the following command from the root directory:
+#### Option A: Using Docker Compose (Recommended)
+This is the easiest way to run the app with all its dependencies out-of-the-box.
 ```bash
 docker-compose up -d --build
 ```
-The application will run securely in the background on port `8004`.
 
-### Option 2: Running Locally with Node.js
+#### Option B: Using Node.js Locally
+If you prefer running the server locally without Docker:
+```bash
+cd src
+npm install
+npm start
+```
 
-1. Navigate to the `src` directory:
-   ```bash
-   cd src
-   ```
-2. Install the dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the server:
-   ```bash
-   npm start
-   ```
-The app will be accessible at `http://localhost:8004`.
+---
 
-## Deployment
+## 💻 Usage
 
-To deploy this project to a VPS (Virtual Private Server like DigitalOcean, AWS EC2, or Hostinger):
-1. **Connect** to your VPS via SSH.
-2. **Clone** this repository to the server.
-3. **Configure Environment**: Create the `.env` file in the `src/` directory with your actual `GEMINI_API_KEY`.
-4. **Deploy**: Run `docker-compose up -d --build`.
+1. Once the application is running, open your browser and navigate to **`http://localhost:8004`**.
+2. **Navigate via Tabs**: Switch between `Compare`, `Timeline`, and `Map` tabs to visualize different datasets over time.
+3. **AI Insights**: Click on any country in the map or scatterplot. On the bottom right, click the **✨ Generate AI Insight** button to receive AI-generated context about that country's statistics globally.
 
-*(Note: The `.env` file is safely ignored during the Docker build process via `.dockerignore` to prevent leaking API keys, and is read via the `docker-compose.yml` `env_file` setting at runtime.)*
+---
 
-## Tech Stack
+## 📂 Project Structure
 
-- **Backend:** Node.js, Express, SQLite3
-- **Frontend:** HTML/CSS/JS, D3.js
-- **AI Integration:** Google Gemini AI
-- **Data Collection:** Python, Jupyter, pandas
+```text
+📦 India-in-the-world
+ ┣ 📂 data_collection/        # Python scripts & Notebooks for web scraping
+ ┃ ┣ 📜 create_database.py    # Converts raw data to SQLite DB
+ ┃ ┗ 📜 ...                   # Source notebooks (World Bank, etc.)
+ ┣ 📂 src/                    # Main application source code
+ ┃ ┣ 📂 data/                 # Generated SQLite database
+ ┃ ┣ 📂 public/               # Frontend assets
+ ┃ ┃ ┣ 📂 css/                # Stylesheets (Vanilla CSS)
+ ┃ ┃ ┣ 📂 js/                 # Client-side logic & D3 implementations
+ ┃ ┃ ┗ 📂 favicons/           # Branding and icons
+ ┃ ┣ 📜 server.js             # Node.js backend server
+ ┃ ┣ 📜 .env                  # Environment variables (Gemini API key)
+ ┃ ┗ 📜 package.json          # Node dependencies
+ ┣ 📜 docker-compose.yml      # Docker orchestration
+ ┣ 📜 Dockerfile              # Docker image configuration
+ ┗ 📜 README.md               # Project documentation
+```
+
+<br />
+
+<div align="center">
+  <i>Built with ❤️ for Global Data Analysis</i>
+</div>
