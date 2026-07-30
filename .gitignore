@@ -3,5 +3,4 @@ src/node_modules/
 .env
 src/.env
 data_collection/data/
-*.db
 .DS_Store
