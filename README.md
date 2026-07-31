@@ -24,6 +24,8 @@ Dive deep into the relationships between economic, social, and governance indica
 
 ---
 
+Live Demo : https://india-in-the-world.onrender.com/
+
 ## ✨ Features
 
 - 📊 **Interactive D3.js Visualizations**: Seamlessly compare data using dynamic Timelines, Choropleth Maps, and Scatterplots.
@@ -48,47 +50,36 @@ Dive deep into the relationships between economic, social, and governance indica
 ### Data Collection
 - **Python & Pandas**: For scraping, cleaning, and processing raw JSON/CSV files into a structured SQLite database.
 - **Jupyter Notebooks**: Step-by-step interactive scripts for data extraction.
+## Data Source
+### World Bank
+Fetched via REST API (`api.worldbank.org`):
+- GDP
+- Annual GDP Growth
+- GDP per Capita
+- GDP per Capita PPP 
+- Debt to GDP Ratio
+- Population
+- Inflation Rate
+- Unemployment Rate
+- Life Expectancy
+- Fertility Rate
+- Urbanization Rate
+- Gini Coefficient
+- Control of Corruption
+- Homicide Rate
 
----
+### Our World in Data
+Downloaded as CSV files (`ourworldindata.org`):
+- Human Development Index
+- The Economist Democracy Index
+- Self-Reported Life Satisfaction
+- Median Age
+- Gender Inequality Index
 
-## 🚀 Installation Instructions
+### Reporters Without Borders
+Downloaded as CSV files `rsf.org`:
+- Press Freedom Index
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/mohammadamanullah123/India-in-the-world.git
-cd India-in-the-world
-```
-
-### 2. Configure your Environment
-Create a `.env` file inside the `src/` directory and add your Google Gemini API key:
-```bash
-# src/.env
-GEMINI_API_KEY=your_gemini_api_key_here
-```
-
-### 3. Choose your Setup Method
-
-#### Option A: Using Docker Compose (Recommended)
-This is the easiest way to run the app with all its dependencies out-of-the-box.
-```bash
-docker-compose up -d --build
-```
-
-#### Option B: Using Node.js Locally
-If you prefer running the server locally without Docker:
-```bash
-cd src
-npm install
-npm start
-```
-
----
-
-## 💻 Usage
-
-1. Once the application is running, open your browser and navigate to **`http://localhost:8004`**.
-2. **Navigate via Tabs**: Switch between `Compare`, `Timeline`, and `Map` tabs to visualize different datasets over time.
-3. **AI Insights**: Click on any country in the map or scatterplot. On the bottom right, click the **✨ Generate AI Insight** button to receive AI-generated context about that country's statistics globally.
 
 ---
 
@@ -116,5 +107,5 @@ npm start
 <br />
 
 <div align="center">
-  <i>Built with ❤️ for Global Data Analysis</i>
+  <i>Built with ❤️ By Md Amanullah</i>
 </div>
