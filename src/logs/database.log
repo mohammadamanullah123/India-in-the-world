@@ -3085,3 +3085,60 @@
       WHERE year = ?
       ORDER BY country_code
      | params: [2023] | 25 ms
+[2026-07-30T16:00:10.951Z] SQL (all): SELECT * FROM countries | 5 ms
+[2026-07-30T16:00:11.052Z] SQL (all): PRAGMA table_info(all_data) | 3 ms
+[2026-07-30T16:00:11.064Z] SQL (all): SELECT DISTINCT year FROM all_data WHERE year IS NOT NULL ORDER BY year DESC | 14 ms
+[2026-07-30T16:00:11.064Z] SQL (get): SELECT MIN(year) as min_year, MAX(year) as max_year FROM all_data WHERE year IS NOT NULL | 14 ms
+[2026-07-30T16:00:14.006Z] SQL (get): 
+    SELECT MIN(year) as min_year, MAX(year) as max_year
+    FROM all_data
+    WHERE year IS NOT NULL
+   | 7 ms
+[2026-07-30T16:00:14.089Z] SQL (get): 
+      SELECT MIN(year) as min_year, MAX(year) as max_year
+      FROM all_data
+      WHERE year IS NOT NULL
+        AND democracy_index IS NOT NULL
+        AND corruption IS NOT NULL
+        AND population IS NOT NULL
+     | 33 ms
+[2026-07-30T16:00:14.123Z] SQL (get): 
+      SELECT MIN(year) as min_year, MAX(year) as max_year
+      FROM all_data
+      WHERE year IS NOT NULL
+        AND hdi IS NOT NULL
+        AND fertility IS NOT NULL
+     | 66 ms
+[2026-07-30T16:00:14.137Z] SQL (all): 
+      SELECT country_code, year, democracy_index as x_value, corruption as y_value, population as s_value
+      FROM all_data
+      WHERE year = ? AND democracy_index IS NOT NULL AND corruption IS NOT NULL AND population IS NOT NULL
+     | params: [2023] | 9 ms
+[2026-07-30T16:00:14.142Z] SQL (all): 
+      SELECT country_code, year, hdi as x_value, fertility as y_value
+      FROM all_data
+      WHERE year = ? AND hdi IS NOT NULL AND fertility IS NOT NULL
+     | params: [2023] | 11 ms
+[2026-07-30T16:00:14.194Z] SQL (all): 
+      SELECT country_code, year, democracy_index as x_value, corruption as y_value
+      FROM all_data
+      WHERE democracy_index IS NOT NULL AND corruption IS NOT NULL
+      ORDER BY year, country_code
+     | 36 ms
+[2026-07-30T16:00:14.258Z] SQL (all): 
+      SELECT country_code, year, hdi as x_value, fertility as y_value
+      FROM all_data
+      WHERE hdi IS NOT NULL AND fertility IS NOT NULL
+      ORDER BY year, country_code
+     | 100 ms
+[2026-07-30T16:00:14.357Z] SQL (get): 
+      SELECT MIN(population) as min_value, MAX(population) as max_value
+      FROM all_data
+      WHERE population IS NOT NULL
+     | 59 ms
+[2026-07-30T16:00:17.018Z] SQL (all): 
+      SELECT country_code, year, access_to_clean_fuels, access_to_electricity, annual_gdp_growth, arable_land_percent, birth_rate, child_mortality, co2_emissions_per_capita, co2_emissions_total, consumer_price_index, corruption, corruption_perceptions_index, crime_rate, current_account_balance_percent_gdp, death_rate, debt_to_gdp, democracy_index, education_expenditure_percent_gdp, exports_percent_gdp, fdi_net_inflows, female_enrollment_tertiary, female_labor_force_participation, fertility, fixed_broadband_per100, forest_area_percent, gdp, gdp_per_capita, gdp_ppp, gender_inequality, gini, greenhouse_gas_emissions_per_capita, gross_savings_percent_gdp, hdi, health_expenditure_per_capita, health_expenditure_percent_gdp, hightech_exports_percent, homicide_rate, hospital_beds_per1000, human_capital_index, human_rights_score, ict_goods_exports_percent, immunization_dpt, immunization_measles, inflation, internet_users_percent, learning_adjusted_years_of_school, life_expectancy, life_satisfaction_index, literacy_rate_adult, literacy_rate_youth, logistics_performance_index, maternal_mortality_ratio, median_age, military_expenditure_percent_gdp, military_expenditure_total, mobile_subscriptions_per100, mortality_rate_under5, nuclear_energy_share, nurses_midwives_per1000, patent_applications_residents, physicians_per1000, pisa_reading_score, pm25_air_pollution, population, population_growth_rate, poverty_ratio, press_freedom, pupil_teacher_ratio_primary, rd_expenditure_percent_gdp, renewable_electricity_output, renewable_energy_percent, renewable_energy_share_total, rule_of_law, sanitation_access_safe, school_enrollment_primary, school_enrollment_secondary, school_enrollment_tertiary, secure_internet_servers_per_million, share_electricity_renewables, share_using_internet, terrorism_deaths, trade_percent_gdp, unemployment, urbanization, water_access_safe, water_stress_index, women_in_parliament
+      FROM all_data
+      WHERE year = ?
+      ORDER BY country_code
+     | params: [2023] | 28 ms
