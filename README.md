@@ -26,13 +26,13 @@ Dive deep into the relationships between economic, social, and governance indica
 
 Live Demo : https://india-in-the-world.onrender.com/
 
-## ✨ Features
+## Features
 
-- 📊 **Interactive D3.js Visualizations**: Seamlessly compare data using dynamic Timelines, Choropleth Maps, and Scatterplots.
-- 🤖 **AI Insights Panel**: Get contextual, real-time insights on any country's stats powered by the Google Gemini API.
-- 🌍 **Extensive Datasets**: Deep metrics aggregated from the World Bank, Our World in Data, and Reporters Without Borders.
-- 🌓 **Dark/Light Mode**: A beautiful, responsive UI that automatically adapts to your system themes.
-- 🐳 **Dockerized Deployments**: Easy to host, build, and manage using Docker Compose.
+- **Interactive D3.js Visualizations**: Seamlessly compare data using dynamic Timelines, Choropleth Maps, and Scatterplots.
+- **AI Insights Panel**: Get contextual, real-time insights on any country's stats powered by the Google Gemini API.
+- **Extensive Datasets**: Deep metrics aggregated from the World Bank, Our World in Data, and Reporters Without Borders.
+- **Dark/Light Mode**: A beautiful, responsive UI that automatically adapts to your system themes.
+- **Dockerized Deployments**: Easy to host, build, and manage using Docker Compose.
 
 ---
 
