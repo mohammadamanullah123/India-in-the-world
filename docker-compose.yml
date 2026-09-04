@@ -1,9 +1,9 @@
-version: '3.8'
+version: '1.0'
 
 services:
   web:
     build: .
-    container_name: world-statistics-dashboard
+    container_name: India-statistics-dashboard
     ports:
       - "8004:8004"
     volumes:
